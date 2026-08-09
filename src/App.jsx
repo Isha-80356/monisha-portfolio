@@ -141,14 +141,12 @@ function App() {
                 <ArrowUpRight size={18} />
               </a>
 
-              <a
-                href="/resume.pdf"
-                download
-                className="secondary-button"
-              >
-                <Download size={18} />
-                Download CV
-              </a>
+              <a 
+  href={`${import.meta.env.BASE_URL}monisha-cv.pdf`} 
+  download="monisha cv.pdf"
+>
+  Download CV
+</a>
 
             </div>
 
