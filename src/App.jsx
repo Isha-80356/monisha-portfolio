@@ -592,7 +592,7 @@ function App() {
         </div>
 
         <a
-          href="https://www.hackerrank.com/profile/24bcs80356K"
+          href="https://www.hackerrank.com/profile/24bcs80356"
           target="_blank"
           rel="noreferrer"
           className="profile-link"
