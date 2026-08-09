@@ -142,8 +142,8 @@ function App() {
               </a>
 
               <a 
-  href={`${import.meta.env.BASE_URL}monisha-cv.pdf`} 
-  download="monisha cv.pdf"
+  href={`${import.meta.env.BASE_URL}resume.pdf`} 
+  download="resume.pdf"
 >
   Download CV
 </a>
