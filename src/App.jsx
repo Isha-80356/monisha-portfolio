@@ -120,16 +120,14 @@ function App() {
               <span>Debsharma</span>
             </h1>
 
-            <h2>
-              Software Engineer <span>|</span> Full Stack Developer
-            </h2>
-
-            <p className="hero-description">
-              I build modern, responsive and user-focused web applications
-              using React, JavaScript, Node.js and modern backend technologies.
-              I am passionate about problem solving, software development and
-              continuously improving my technical skills.
-            </p>
+           <h2>Computer Science Student | Aspiring Software Engineer</h2>
+            <p>
+  I’m a Computer Science student passionate about building modern,
+  responsive and user-focused web applications using React, JavaScript,
+  Node.js and modern backend technologies. I enjoy solving problems,
+  learning new technologies and continuously improving my software
+  development skills.
+</p>
 
             <div className="hero-buttons">
 
