@@ -620,11 +620,11 @@ function App() {
               <div className="timeline-content">
 
                 <span>
-                  2023 — Present
+                  2024 — 2028
                 </span>
 
                 <h3>
-                  Bachelor of Technology — Computer Science & Engineering
+                  Bachelor of Engineering — Computer Science & Engineering
                 </h3>
 
                 <h4>
@@ -632,7 +632,7 @@ function App() {
                 </h4>
 
                 <p>
-                  Coursework includes Data Structures & Algorithms, DBMS,
+                  Mechine Learning, Big Data, Coursework includes Data Structures & Algorithms, DBMS,
                   Operating Systems, Java, Software Engineering, Full Stack
                   Development and Design & Analysis of Algorithms.
                 </p>
