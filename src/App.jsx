@@ -29,32 +29,27 @@ const projects = [
     description:
       "A complete blog application with authentication, CRUD operations, user management and database integration.",
     tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    github: "#",
-    demo: "#",
+    
   },
   {
     title: "Fake News Detection",
     description:
       "An NLP-based project designed to classify news content and identify potentially misleading information.",
     tech: ["Python", "NLP", "TF-IDF", "Machine Learning"],
-    github: "#",
-    demo: "#",
+    
   },
   {
     title: "AI Study Planner",
     description:
       "A smart study planning application that helps students organize subjects, tasks and learning progress.",
     tech: ["React", "Node.js", "MongoDB"],
-    github: "#",
-    demo: "#",
+    
   },
   {
     title: "Student Academic Dashboard",
     description:
       "A responsive academic dashboard for managing student information, courses, attendance and academic data.",
     tech: ["React", "JavaScript", "CSS"],
-    github: "#",
-    demo: "#",
   },
 ];
 
