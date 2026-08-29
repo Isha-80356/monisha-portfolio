@@ -400,19 +400,7 @@ function App() {
 
                 </div>
 
-                <div className="project-links">
-
-                  <a href={project.github}>
-                    <span className="link-icon">GH</span>
-                    GitHub
-                  </a>
-
-                  <a href={project.demo}>
-                    <ExternalLink size={17} />
-                    Live Demo
-                  </a>
-
-                </div>
+                
 
               </article>
 
