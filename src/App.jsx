@@ -507,7 +507,7 @@ function App() {
     <div className="coding-stats">
 
       <div className="coding-stat">
-        <h3>1000+</h3>
+        <h3>500+</h3>
         <p>Problems Solved</p>
       </div>
 
