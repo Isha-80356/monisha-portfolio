@@ -148,7 +148,7 @@ function App() {
             <div className="social-links">
 
               <a
-                href="https://github.com/Isha-80356"
+                href={`${import.meta.env.BASE_URL}https://github.com/Isha-80356`}
                 aria-label="GitHub"
                 title="GitHub"
               >
@@ -156,7 +156,7 @@ function App() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/monisha-rani-65b879357"
+                href={`${import.meta.env.BASE_URL}https://www.linkedin.com/in/monisha-rani-65b879357`}
                 aria-label="LinkedIn"
                 title="LinkedIn"
               >
@@ -182,7 +182,7 @@ function App() {
             <div className="profile-card">
 
   <div className="profile-circle">
-    <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Monisha" />
+   <img src={`${import.meta.env.BASE_URL}profile.jpeg`} alt="Monisha" />
   </div>
 
   <div className="floating-card card-one">
