@@ -29,21 +29,18 @@ const projects = [
     description:
       "A complete blog application with authentication, CRUD operations, user management and database integration.",
     tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    
   },
   {
     title: "Fake News Detection",
     description:
       "An NLP-based project designed to classify news content and identify potentially misleading information.",
     tech: ["Python", "NLP", "TF-IDF", "Machine Learning"],
-    
   },
   {
     title: "AI Study Planner",
     description:
       "A smart study planning application that helps students organize subjects, tasks and learning progress.",
     tech: ["React", "Node.js", "MongoDB"],
-    
   },
   {
     title: "Student Academic Dashboard",
@@ -68,21 +65,48 @@ function App() {
       <nav className="navbar">
         <div className="container nav-inner">
 
-          <a href="#home" className="logo" onClick={closeMenu}>
+          <a
+            href="#home"
+            className="logo"
+            onClick={closeMenu}
+          >
             MONISHA<span>.</span>
           </a>
 
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <a href="#home" onClick={closeMenu}>Home</a>
-            <a href="#about" onClick={closeMenu}>About</a>
-            <a href="#skills" onClick={closeMenu}>Skills</a>
-            <a href="#projects" onClick={closeMenu}>Projects</a>
-            <a href="#education" onClick={closeMenu}>Education</a>
-            <a href="#research" onClick={closeMenu}>Research</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
+            <a href="#home" onClick={closeMenu}>
+              Home
+            </a>
+
+            <a href="#about" onClick={closeMenu}>
+              About
+            </a>
+
+            <a href="#skills" onClick={closeMenu}>
+              Skills
+            </a>
+
+            <a href="#projects" onClick={closeMenu}>
+              Projects
+            </a>
+
+            <a href="#education" onClick={closeMenu}>
+              Education
+            </a>
+
+            <a href="#research" onClick={closeMenu}>
+              Research
+            </a>
+
+            <a href="#contact" onClick={closeMenu}>
+              Contact
+            </a>
           </div>
 
-          <a href="#contact" className="nav-button">
+          <a
+            href="#contact"
+            className="nav-button"
+          >
             Let's Talk
           </a>
 
@@ -99,7 +123,10 @@ function App() {
 
       {/* ================= HERO ================= */}
 
-      <section id="home" className="hero section">
+      <section
+        id="home"
+        className="hero section"
+      >
 
         <div className="hero-glow glow-one"></div>
         <div className="hero-glow glow-two"></div>
@@ -108,21 +135,26 @@ function App() {
 
           <div className="hero-content">
 
-          <p className="hero-eyebrow">Hi, I'm</p>
+            <p className="hero-eyebrow">
+              Hi, I'm
+            </p>
 
             <h1>
               Monisha
               <span>Debsharma</span>
             </h1>
 
-           <h2>Computer Science Student | Aspiring Software Engineer</h2>
+            <h2>
+              Computer Science Student | Aspiring Software Engineer
+            </h2>
+
             <p>
-  I’m a Computer Science student passionate about building modern,
-  responsive and user-focused web applications using React, JavaScript,
-  Node.js and modern backend technologies. I enjoy solving problems,
-  learning new technologies and continuously improving my software
-  development skills.
-</p>
+              I’m a Computer Science student passionate about building
+              modern, responsive and user-focused web applications using
+              React, JavaScript, Node.js and modern backend technologies.
+              I enjoy solving problems, learning new technologies and
+              continuously improving my software development skills.
+            </p>
 
             <div className="hero-buttons">
 
@@ -134,33 +166,43 @@ function App() {
                 <ArrowUpRight size={18} />
               </a>
 
-              <a 
-  href={`${import.meta.env.BASE_URL}resume.pdf`} 
-  download="resume.pdf"
->
-  Download CV
-</a>
+              <a
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                className="secondary-button"
+                download="resume.pdf"
+              >
+                <Download size={18} />
+                Download CV
+              </a>
 
             </div>
 
-            {/* SOCIAL LINKS */}
+            {/* ================= SOCIAL LINKS ================= */}
 
             <div className="social-links">
 
               <a
-                href={`${import.meta.env.BASE_URL}https://github.com/Isha-80356`}
+                href="https://github.com/Isha-80356"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="GitHub"
                 title="GitHub"
               >
-                <span className="social-text">GH</span>
+                <span className="social-text">
+                  GH
+                </span>
               </a>
 
               <a
-                href={`${import.meta.env.BASE_URL}https://www.linkedin.com/in/monisha-rani-65b879357`}
+                href="https://www.linkedin.com/in/monisha-rani-65b879357/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 title="LinkedIn"
               >
-                <span className="social-text">in</span>
+                <span className="social-text">
+                  in
+                </span>
               </a>
 
               <a
@@ -175,35 +217,38 @@ function App() {
 
           </div>
 
-          {/* HERO PROFILE */}
+          {/* ================= HERO PROFILE ================= */}
 
           <div className="hero-card-wrapper">
 
             <div className="profile-card">
 
-  <div className="profile-circle">
-   <img src={`${import.meta.env.BASE_URL}profile.jpeg`} alt="Monisha" />
-  </div>
+              <div className="profile-circle">
+                <img
+                  src={`${import.meta.env.BASE_URL}profile.jpeg`}
+                  alt="Monisha"
+                />
+              </div>
 
-  <div className="floating-card card-one">
-    <Code2 size={18} />
-    <span>Full Stack</span>
-  </div>
-
-  
               <div className="floating-card card-one">
                 <Code2 size={18} />
-                <span>Full Stack</span>
+                <span>
+                  Full Stack
+                </span>
               </div>
 
               <div className="floating-card card-two">
                 <Database size={18} />
-                <span>Backend</span>
+                <span>
+                  Backend
+                </span>
               </div>
 
               <div className="floating-card card-three">
                 <Globe size={18} />
-                <span>Web Apps</span>
+                <span>
+                  Web Apps
+                </span>
               </div>
 
             </div>
@@ -211,11 +256,15 @@ function App() {
           </div>
 
         </div>
+
       </section>
 
       {/* ================= ABOUT ================= */}
 
-      <section id="about" className="section">
+      <section
+        id="about"
+        className="section"
+      >
 
         <div className="container">
 
@@ -227,7 +276,9 @@ function App() {
 
             <h2>
               Turning ideas into{" "}
-              <span>digital solutions.</span>
+              <span>
+                digital solutions.
+              </span>
             </h2>
 
           </div>
@@ -237,21 +288,23 @@ function App() {
             <div className="about-text">
 
               <p>
-                I am a Computer Science and Engineering student with a strong
-                interest in software development, full-stack web development
-                and problem solving.
+                I am a Computer Science and Engineering student with
+                a strong interest in software development, full-stack
+                web development and problem solving.
               </p>
 
               <p>
-                My technical journey includes programming with C++, Java and
-                Python, along with modern web technologies such as HTML, CSS,
-                JavaScript, React, Node.js, Express and MongoDB.
+                My technical journey includes programming with C++,
+                Java and Python, along with modern web technologies
+                such as HTML, CSS, JavaScript, React, Node.js,
+                Express and MongoDB.
               </p>
 
               <p>
-                I enjoy creating practical projects that solve real-world
-                problems and I am continuously improving my Data Structures &
-                Algorithms and software engineering skills.
+                I enjoy creating practical projects that solve
+                real-world problems and I am continuously improving
+                my Data Structures & Algorithms and software
+                engineering skills.
               </p>
 
             </div>
@@ -259,23 +312,43 @@ function App() {
             <div className="about-stats">
 
               <div className="stat-card">
-                <strong>01</strong>
-                <span>CSE Student</span>
+                <strong>
+                  01
+                </strong>
+
+                <span>
+                  CSE Student
+                </span>
               </div>
 
               <div className="stat-card">
-                <strong>02</strong>
-                <span>Full Stack Focus</span>
+                <strong>
+                  02
+                </strong>
+
+                <span>
+                  Full Stack Focus
+                </span>
               </div>
 
               <div className="stat-card">
-                <strong>03</strong>
-                <span>Research Project</span>
+                <strong>
+                  03
+                </strong>
+
+                <span>
+                  Research Project
+                </span>
               </div>
 
               <div className="stat-card">
-                <strong>04</strong>
-                <span>DSA Learner</span>
+                <strong>
+                  04
+                </strong>
+
+                <span>
+                  DSA Learner
+                </span>
               </div>
 
             </div>
@@ -288,7 +361,10 @@ function App() {
 
       {/* ================= SKILLS ================= */}
 
-      <section id="skills" className="section dark-section">
+      <section
+        id="skills"
+        className="section dark-section"
+      >
 
         <div className="container">
 
@@ -299,39 +375,40 @@ function App() {
             </p>
 
             <h2>
-              My <span>technology stack.</span>
+              My{" "}
+              <span>
+                technology stack.
+              </span>
             </h2>
 
           </div>
 
           <div className="skills-grid">
 
-            {Object.entries(skills).map(([category, items]) => (
+            {Object.entries(skills).map(
+              ([category, items]) => (
+                <div
+                  className="skill-card"
+                  key={category}
+                >
 
-              <div
-                className="skill-card"
-                key={category}
-              >
+                  <h3>
+                    {category}
+                  </h3>
 
-                <h3>
-                  {category}
-                </h3>
+                  <div className="skill-tags">
 
-                <div className="skill-tags">
+                    {items.map((skill) => (
+                      <span key={skill}>
+                        {skill}
+                      </span>
+                    ))}
 
-                  {items.map((skill) => (
-
-                    <span key={skill}>
-                      {skill}
-                    </span>
-
-                  ))}
+                  </div>
 
                 </div>
-
-              </div>
-
-            ))}
+              )
+            )}
 
           </div>
 
@@ -341,7 +418,10 @@ function App() {
 
       {/* ================= PROJECTS ================= */}
 
-      <section id="projects" className="section">
+      <section
+        id="projects"
+        className="section"
+      >
 
         <div className="container">
 
@@ -353,53 +433,53 @@ function App() {
 
             <h2>
               Projects that{" "}
-              <span>show what I build.</span>
+              <span>
+                show what I build.
+              </span>
             </h2>
 
           </div>
 
           <div className="projects-grid">
 
-            {projects.map((project, index) => (
+            {projects.map(
+              (project, index) => (
+                <article
+                  className="project-card"
+                  key={project.title}
+                >
 
-              <article
-                className="project-card"
-                key={project.title}
-              >
+                  <div className="project-number">
+                    0{index + 1}
+                  </div>
 
-                <div className="project-number">
-                  0{index + 1}
-                </div>
+                  <div>
 
-                <div>
+                    <h3>
+                      {project.title}
+                    </h3>
 
-                  <h3>
-                    {project.title}
-                  </h3>
+                    <p>
+                      {project.description}
+                    </p>
 
-                  <p>
-                    {project.description}
-                  </p>
+                  </div>
 
-                </div>
+                  <div className="project-tech">
 
-                <div className="project-tech">
+                    {project.tech.map(
+                      (tech) => (
+                        <span key={tech}>
+                          {tech}
+                        </span>
+                      )
+                    )}
 
-                  {project.tech.map((tech) => (
+                  </div>
 
-                    <span key={tech}>
-                      {tech}
-                    </span>
-
-                  ))}
-
-                </div>
-
-                
-
-              </article>
-
-            ))}
+                </article>
+              )
+            )}
 
           </div>
 
@@ -421,7 +501,9 @@ function App() {
 
             <h2>
               Building strong{" "}
-              <span>DSA fundamentals.</span>
+              <span>
+                DSA fundamentals.
+              </span>
             </h2>
 
           </div>
@@ -446,11 +528,9 @@ function App() {
                   "Graph",
                   "Hash Table",
                 ].map((item) => (
-
                   <span key={item}>
                     {item}
                   </span>
-
                 ))}
 
               </div>
@@ -474,11 +554,9 @@ function App() {
                   "Dynamic Programming",
                   "Backtracking",
                 ].map((item) => (
-
                   <span key={item}>
                     {item}
                   </span>
-
                 ))}
 
               </div>
@@ -490,110 +568,154 @@ function App() {
         </div>
 
       </section>
-      <section className="coding-section section" id="coding">
-  <div className="container">
 
-    <div className="section-title">
-      <span>Problem Solving</span>
+      {/* ================= COMPETITIVE PROGRAMMING ================= */}
 
-      <h2>Competitive Programming</h2>
+      <section
+        className="coding-section section"
+        id="coding"
+      >
 
-      <p>
-        I regularly practice Data Structures, Algorithms
-        and Problem Solving on competitive programming platforms.
-      </p>
-    </div>
+        <div className="container">
 
-    <div className="coding-stats">
+          <div className="section-title">
 
-      <div className="coding-stat">
-        <h3>500+</h3>
-        <p>Problems Solved</p>
-      </div>
+            <span>
+              Problem Solving
+            </span>
 
-      <div className="coding-stat">
-        <h3>DSA</h3>
-        <p>Data Structures & Algorithms</p>
-      </div>
+            <h2>
+              Competitive Programming
+            </h2>
 
-      <div className="coding-stat">
-        <h3>CP</h3>
-        <p>Competitive Programming</p>
-      </div>
+            <p>
+              I regularly practice Data Structures, Algorithms
+              and Problem Solving on competitive programming
+              platforms.
+            </p>
 
-    </div>
+          </div>
 
-    <div className="coding-profiles">
+          <div className="coding-stats">
 
-      {/* LEETCODE */}
+            <div className="coding-stat">
 
-      <div className="coding-card">
+              <h3>
+                500+
+              </h3>
 
-        <div className="coding-icon">
-          <Code2 size={26} />
+              <p>
+                Problems Solved
+              </p>
+
+            </div>
+
+            <div className="coding-stat">
+
+              <h3>
+                DSA
+              </h3>
+
+              <p>
+                Data Structures & Algorithms
+              </p>
+
+            </div>
+
+            <div className="coding-stat">
+
+              <h3>
+                CP
+              </h3>
+
+              <p>
+                Competitive Programming
+              </p>
+
+            </div>
+
+          </div>
+
+          <div className="coding-profiles">
+
+            {/* ================= LEETCODE ================= */}
+
+            <div className="coding-card">
+
+              <div className="coding-icon">
+                <Code2 size={26} />
+              </div>
+
+              <div>
+
+                <h3>
+                  LeetCode
+                </h3>
+
+                <p>
+                  Solving Data Structures, Algorithms and
+                  interview-oriented programming problems.
+                </p>
+
+              </div>
+
+              <a
+                href="https://leetcode.com/u/monisha_j10/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="profile-link"
+              >
+                View Profile
+                <ExternalLink size={16} />
+              </a>
+
+            </div>
+
+            {/* ================= HACKERRANK ================= */}
+
+            <div className="coding-card">
+
+              <div className="coding-icon">
+                <Code2 size={26} />
+              </div>
+
+              <div>
+
+                <h3>
+                  HackerRank
+                </h3>
+
+                <p>
+                  Practicing problem solving, C++, Java, SQL
+                  and other technical skills.
+                </p>
+
+              </div>
+
+              <a
+                href="https://www.hackerrank.com/profile/24bcs80356"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="profile-link"
+              >
+                View Profile
+                <ExternalLink size={16} />
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div>
-          <h3>LeetCode</h3>
-
-          <p>
-            Solving Data Structures, Algorithms and
-            interview-oriented programming problems.
-          </p>
-        </div>
-
-        <a
-          href="https://leetcode.com/u/monisha_j10/"
-          target="_blank"
-          rel="noreferrer"
-          className="profile-link"
-        >
-          View Profile
-          <ExternalLink size={16} />
-        </a>
-
-      </div>
-
-
-      {/* HACKERRANK */}
-
-      <div className="coding-card">
-
-        <div className="coding-icon">
-          <Code2 size={26} />
-        </div>
-
-        <div>
-          <h3>HackerRank</h3>
-
-          <p>
-            Practicing problem solving, C++, Java, SQL
-            and other technical skills.
-          </p>
-        </div>
-
-        <a
-          href="https://www.hackerrank.com/profile/24bcs80356"
-          target="_blank"
-          rel="noreferrer"
-          className="profile-link"
-        >
-          View Profile
-          <ExternalLink size={16} />
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
+      </section>
 
       {/* ================= EDUCATION ================= */}
 
-      <section id="education" className="section">
+      <section
+        id="education"
+        className="section"
+      >
 
         <div className="container">
 
@@ -604,7 +726,10 @@ function App() {
             </p>
 
             <h2>
-              My academic <span>journey.</span>
+              My academic{" "}
+              <span>
+                journey.
+              </span>
             </h2>
 
           </div>
@@ -624,7 +749,8 @@ function App() {
                 </span>
 
                 <h3>
-                  Bachelor of Engineering — Computer Science & Engineering
+                  Bachelor of Engineering —
+                  Computer Science & Engineering
                 </h3>
 
                 <h4>
@@ -632,8 +758,9 @@ function App() {
                 </h4>
 
                 <p>
-                  Mechine Learning, Big Data, Coursework includes Data Structures & Algorithms, DBMS,
-                  Operating Systems, Java, Software Engineering, Full Stack
+                  Machine Learning, Big Data, Coursework includes
+                  Data Structures & Algorithms, DBMS, Operating
+                  Systems, Java, Software Engineering, Full Stack
                   Development and Design & Analysis of Algorithms.
                 </p>
 
@@ -669,18 +796,32 @@ function App() {
               </h2>
 
               <p>
-                A research-oriented project focused on detecting misleading
-                news using Natural Language Processing and machine learning
-                techniques.
+                A research-oriented project focused on detecting
+                misleading news using Natural Language Processing
+                and machine learning techniques.
               </p>
 
               <div className="skill-tags">
 
-                <span>NLP</span>
-                <span>TF-IDF</span>
-                <span>BERT</span>
-                <span>CNN</span>
-                <span>LSTM</span>
+                <span>
+                  NLP
+                </span>
+
+                <span>
+                  TF-IDF
+                </span>
+
+                <span>
+                  BERT
+                </span>
+
+                <span>
+                  CNN
+                </span>
+
+                <span>
+                  LSTM
+                </span>
 
               </div>
 
@@ -714,39 +855,57 @@ function App() {
 
             <h2>
               Let's build something{" "}
-              <span>great together.</span>
+              <span>
+                great together.
+              </span>
             </h2>
 
             <p>
-              Have a project idea, internship opportunity or collaboration in
-              mind? Feel free to reach out.
+              Have a project idea, internship opportunity or
+              collaboration in mind? Feel free to reach out.
             </p>
 
           </div>
 
           <div className="contact-buttons">
 
+            {/* EMAIL */}
+
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:monishadebsharma63@gmail.com"
               className="primary-button"
             >
               <Mail size={18} />
               Email Me
             </a>
 
+            {/* LINKEDIN */}
+
             <a
-              href="#"
+              href="https://www.linkedin.com/in/monisha-rani-65b879357/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="secondary-button"
             >
-              <span className="social-text">in</span>
+              <span className="social-text">
+                in
+              </span>
+
               LinkedIn
             </a>
 
+            {/* GITHUB */}
+
             <a
-              href="#"
+              href="https://github.com/Isha-80356"
+              target="_blank"
+              rel="noopener noreferrer"
               className="secondary-button"
             >
-              <span className="social-text">GH</span>
+              <span className="social-text">
+                GH
+              </span>
+
               GitHub
             </a>
 
@@ -775,7 +934,8 @@ function App() {
           </div>
 
           <p>
-            © 2026 Monisha Debsharma. All rights reserved.
+            © 2026 Monisha Debsharma.
+            All rights reserved.
           </p>
 
         </div>
