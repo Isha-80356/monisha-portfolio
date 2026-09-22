@@ -861,14 +861,12 @@ function App() {
             </h2>
 
             <p>
-              Have a project idea, internship opportunity or
-              collaboration in mind? Feel free to reach out.
+              Got a problem worth solving? Let’s turn it into a clean, scalable and meaningful digital solution.
             </p>
 
           </div>
 
           <div className="contact-buttons">
-
             {/* EMAIL */}
 
             <a
